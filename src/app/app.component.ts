@@ -8,4 +8,12 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'practice';
   myName = "Raja babu"
+
+  Keyupmethod(event:any){
+    console.log(event)
+  }
+
+  login(role:any){
+    localStorage.setItem("role",role)
+  }
 }

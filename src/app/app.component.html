@@ -1,1 +1,23 @@
-<h1>Hello {{myName}}</h1>
+<!-- <h1>Hello {{myName}}</h1>
+
+
+
+<input type="text" placeholder="enter input" (keyup)="Keyupmethod($event)"> <br><br>
+
+<input type="text" placeholder="enter input" (keydown)="Keyupmethod($event)">
+ <br><br>
+ <input type="text" placeholder="enter input" (keypress)="Keyupmethod($event)">
+
+
+ <app-allconcepts> </app-allconcepts> -->
+
+
+
+ <div class="topnav" style="background-color: blue; padding: auto; color: white; ;">
+  <span class="active" href="#home">Home</span>
+  <span [routerLink] ="['/admin']" >Admin</span>
+  <span [routerLink] = "['/user']">User</span>
+  <span (click)="login('user')"> Login spans user</span>
+  <span (click)="login('admin')">Login as admin</span>
+</div>
+<router-outlet></router-outlet>
